@@ -33,7 +33,7 @@ jobs:
 
       - name: Run monitor logic
         env:
-          SKYSCANNER_BASE_URL: ${{ secrets.SKYSCANNER_BASE_URL }}
-          NOTIFY_WEBHOOK: ${{ secrets.NOTIFY_WEBHOOK }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          python main.py  # TODO: 替换为真实入口脚本
+          python monitor.py

@@ -28,6 +28,17 @@ It uses Playwright to open Skyscanner in a headless browser, waits for the page 
 
 If it fails to find prices (e.g., due to bot protection or page layout changes), it will upload a screenshot to the GitHub Actions artifacts for debugging.
 
+### 4. Run the Action Manually
+You can trigger the workflow at any time without waiting for the schedule:
+
+1. Go to your repository on GitHub.
+2. Click the **Actions** tab.
+3. In the left sidebar, select **Flight Price Monitor** (or **Scheduled Skyscanner Monitor**).
+4. Click the **Run workflow** button on the right side.
+5. Select the branch (usually `main`) and click **Run workflow**.
+
+The run will start within a few seconds and you will receive a Telegram message once it completes.
+
 ## Local Testing
 If you want to run this locally:
 
